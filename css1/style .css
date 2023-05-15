@@ -104,9 +104,8 @@ nav .drop-menu ul li{
   /* style body */
   .bod {
     margin: auto;
-    padding: 5%;
+    padding: 10% 5%;
     max-width: 1100px;
-    min-width: 300px;
     box-sizing: border-box;
   }
   /* style about */
@@ -115,13 +114,14 @@ nav .drop-menu ul li{
     margin: auto;
     width: 100%;
     padding: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill ,minmax(150px 1fr));
-    gap: 10px;
+   display: flex;
+   /* flex-wrap: wrap; */
   }
 
   .img-L-float {
     opacity: 0.8;
+    width: 90%;
+
   }
   .p-R-float {
     margin-left: 10px;
@@ -172,8 +172,7 @@ nav .drop-menu ul li{
   }
   .menu .img2 {
     opacity: 0.7;
-    max-height: 700px;
-    min-height: 300px;
+    max-height: 900px;
   }
   /* contact style */
   .cont {
@@ -259,6 +258,13 @@ nav .drop-menu ul li{
    nav ul{
       display:none;
     }
+    .sec1{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
+    }
+    .sec1 .img-L-float{
+      width: 100%;
+    }
     .sec1-p2{
       display: none;
     }
@@ -266,7 +272,7 @@ nav .drop-menu ul li{
       text-align: center;
     }
     .menu .img2 {
-      display: none;
+     width: 100%;
     }
   }
   @media (min-width:772px){
